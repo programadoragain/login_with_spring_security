@@ -1,4 +1,4 @@
-package Service;
+package com.example.java.login.Service;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
@@ -10,9 +10,8 @@ import org.springframework.security.core.userdetails.UserDetails;
 import com.example.java.login.Entity.User;
 
 public class CustomUserDetails implements UserDetails {
-
 	private User user;
-
+	
 	public CustomUserDetails(User user) {
 		this.user= user;
 	}

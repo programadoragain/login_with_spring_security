@@ -8,7 +8,6 @@ import com.example.java.login.Roles;
 import com.example.java.login.Entity.User;
 
 public class DatabaseLoader {
-	
 	private UserRepository repo;
 
 	public DatabaseLoader(UserRepository repo) {

@@ -2,12 +2,13 @@ package com.example.java.login.Controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 
 
 @Controller
 public class MainController {
-
-	@GetMapping ("/home")
+	
+	@GetMapping ("/")
 	public String viewHomePage() {
 		return "index";
 	}
@@ -22,14 +23,14 @@ public class MainController {
 		return "user/user_login";
 	}
 	
-	@GetMapping ("/admin/home") 
+	@GetMapping("/admin/home")
 	public String viewAdminHome() {
-		return "/admin/admin_home";
+		return "admin/admin_home";
 	}
 	
 	@GetMapping ("/user/home") 
 	public String viewUserHome() {
-		return "/user/user_home";
+		return "user/user_home";
 	}
 
 

@@ -16,15 +16,12 @@ public class User {
 	@Enumerated(EnumType.STRING)
 	private Roles role;
 	
-	public User () {}
-	
 	public User(String email, String password, Roles role) {
 		super();
 		this.email = email;
 		this.password = password;
 		this.role = role;
 	}
-	
 	public Integer getId() {
 		return id;
 	}
